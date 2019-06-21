@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Item } from '../../entities/item.entity';
 import { UserService } from '../../services/user.service';
+import { PhonePipe } from '../../pipes/phone.pipe';
 
 @Component({
 	templateUrl: 'one.component.html',

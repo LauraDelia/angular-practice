@@ -9,12 +9,14 @@ import { OneComponent } from './components/one/one.component';
 import { UserService } from "./services/user.service";
 
 import { routing } from './app.routing';
+import { PhonePipe } from './pipes/phone.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirectoryComponent,
     OneComponent,
+    PhonePipe
     
   ],
   imports: [
