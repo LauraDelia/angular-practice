@@ -1,0 +1,63 @@
+
+
+<!--<div class="container">
+<div class="row">
+    <div class="col-sm-4">
+        <strong>No:</strong>{{item.user.id}}
+        <img src="assets/images/{{item.user.photo}}" width="50">
+    </div>
+    <div class="col-sm-8">
+      
+       <strong>First Name: </strong> {{item.user.firstName}}
+       <strong>Last Name: </strong> {{item.user.lastName}}
+       <strong>Phone: </strong> {{item.user.phone}}
+       <strong>Email: </strong> {{item.user.email}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <strong> Address: </strong> {{item.user.address}}
+        <img src="assets/images/{{item.user.photo}}" width="50">
+    </div>
+    <div class="col-sm-8">
+            <iframe src="{{item.user.map}}" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+</div>-->
+<h3>User Information</h3>
+<div class="centerTable"> 
+    <div class="container">
+    <table>
+    <tr>
+        <th>Photo</th>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let item of items">
+        <td>
+           <img src="assets/images/{{item.user.photo}}" width="100">
+        </td>
+        <td>{{item.user.id}}</td>
+        <td>{{item.user.firstName}}</td>
+        <td>{{item.user.lastName}}</td>
+        <td>{{item.user.email}}</td>
+        <td>{{item.user.phone}}</td>
+    </tr>
+    <br>
+    <tr>
+        <th colspan="2">Address</th>
+        <th colspan="4">Map</th>
+    </tr>
+    <tr *ngFor="let item of items">
+        <td colspan="2">{{item.user.address}}</td>
+        <td colspan="4">
+          
+        </td>
+    </tr>
+
+</table>
+</div>

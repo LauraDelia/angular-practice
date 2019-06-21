@@ -1,0 +1,22 @@
+<div class="centerTable"> 
+    <table style="width: 100%">
+            <tr>
+                <th>No.</th>
+                <th>Photo</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>More Information</th>
+             </tr>
+                <tr *ngFor="let user of users">
+                    <td>{{user.id}}</td>
+                    <td>
+                    <img src="assets/images/{{user.photo}}">
+                  </td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>
+                        <a [routerLink]="['/user', { id:user.id }]">Select</a>
+                    </td>
+                </tr>
+            </table>
+</div>
